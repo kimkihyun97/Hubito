@@ -1,0 +1,33 @@
+<launch>
+  <!-- launch RealSense camera -->
+  <include file="$(find realsense2_camera)/launch/rs_camera.launch">
+    <arg name="align_depth" value="true" />
+    <arg name="color_width" value="640" />
+    <arg name="color_height" value="480" />
+    <arg name="color_fps" value="30" />
+    <arg name="depth_width" value="640" />
+    <arg name="depth_height" value="480" />
+    <arg name="depth_fps" value="30" />
+  </include>
+
+  <!-- launch nlink_parser -->
+  <include file="$(find nlink_parser)/launch/linktrack_aoa.launch"/>
+
+  <!-- launch uwb_timestamp node -->
+  <node pkg="human_tracking" type="uwb_timestamp" name="UWB_Timestamp" output="screen"/>
+
+  <!-- launch uwb_sensing node -->
+  <node pkg="human_tracking" type="uwb_sensing" name="UWB_Sensing" output="screen"/>
+
+  <!-- launch darknet_ros -->
+  <include file="$(find darknet_ros)/launch/darknet_ros.launch"/>
+
+  <!-- launch coordinate_estimation node -->
+  <node pkg="coordinate_estimation" type="coordinate_estimation" name="Coordinate_Estimation" output="screen"/>
+
+  <!-- launch rosserial -->
+  <node pkg="rosserial_python" type="serial_node.py" name="rosserial" args="/dev/ttyACM0 _baud:=115200"/>
+
+</launch>
+
+
