@@ -14,6 +14,3 @@ UWB_Human_following_Robot
 
 - The measurements of distance and angles are highly accurate
 
-
-# following
-![image](https://github.com/kimkihyun97/Hubito/assets/122510616/35f8627f-76f3-4e8f-934e-31e2c33f2401)
