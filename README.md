@@ -2,7 +2,7 @@
 UWB_Human_following_Robot
 
 # Diagram
-![image](https://github.com/kimkihyun97/Hubito/assets/122510616/edd6cb5d-5eb8-462c-ac40-d262207c8c43)
+![image](https://github.com/kimkihyun97/Hubito/assets/122510616/588acace-f68a-4ca4-9c70-ab62aab2bf28)
 
 
 # appearance
