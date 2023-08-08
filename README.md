@@ -15,7 +15,7 @@ UWB_Human_following_Robot
 - The measurements of distance and angles are highly accurate
 
 # PID
-![image](https://github.com/kimkihyun97/Hubito/assets/122510616/0495a0ea-c607-43c4-9fa8-bceeb933da1d)
+![image](https://github.com/kimkihyun97/Hubito/assets/122510616/69efa1a4-2f9d-44db-89a0-a32cc99822c7)
 
 
 # Result
